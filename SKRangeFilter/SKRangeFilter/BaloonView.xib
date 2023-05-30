@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaloonView" customModule="SKRangeFilter" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="8DV-wP-zSt" id="duS-tH-gyo"/>
+                <outlet property="imgVw" destination="Tvg-8f-jge" id="w9p-FU-Pme"/>
+                <outlet property="valueLbl" destination="Ig8-vm-uvL" id="5Nb-QH-iFj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8DV-wP-zSt">
+            <rect key="frame" x="0.0" y="0.0" width="92" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tvg-8f-jge">
+                    <rect key="frame" x="0.0" y="0.0" width="92" height="110"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ig8-vm-uvL">
+                    <rect key="frame" x="0.0" y="44.5" width="92" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Pff-xg-nuJ"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ig8-vm-uvL" firstAttribute="centerX" secondItem="8DV-wP-zSt" secondAttribute="centerX" id="Psn-K2-4Ws"/>
+                <constraint firstItem="Tvg-8f-jge" firstAttribute="top" secondItem="Pff-xg-nuJ" secondAttribute="top" id="Q1N-da-Glx"/>
+                <constraint firstItem="Tvg-8f-jge" firstAttribute="leading" secondItem="Pff-xg-nuJ" secondAttribute="leading" id="UQM-tt-f9b"/>
+                <constraint firstItem="Tvg-8f-jge" firstAttribute="trailing" secondItem="Pff-xg-nuJ" secondAttribute="trailing" id="V0v-L0-Aue"/>
+                <constraint firstItem="Tvg-8f-jge" firstAttribute="bottom" secondItem="Pff-xg-nuJ" secondAttribute="bottom" id="WWG-L7-e0A"/>
+                <constraint firstItem="Ig8-vm-uvL" firstAttribute="width" secondItem="Tvg-8f-jge" secondAttribute="width" id="sZ0-He-gpQ"/>
+                <constraint firstItem="Ig8-vm-uvL" firstAttribute="centerY" secondItem="8DV-wP-zSt" secondAttribute="centerY" id="vhu-Uu-shg"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-96" y="-1092"/>
+        </view>
+    </objects>
+</document>
